@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Run Main Class') {
+        stage('Run') {
             steps {
                 echo 'Running main factorial program...'
                 bat 'java factorial'
