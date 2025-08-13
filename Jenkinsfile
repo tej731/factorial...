@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compiling the code...'
-                bat 'javac factorial.java manifest.txt Testfactorial.java'
+                bat 'javac factorial.java Testfactorial.java'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Run') {
+        stage('Run Main Class') {
             steps {
                 echo 'Running main factorial program...'
                 bat 'java factorial'
